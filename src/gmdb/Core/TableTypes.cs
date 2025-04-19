@@ -1,0 +1,37 @@
+﻿namespace gmdb
+{
+    public enum TableTypes
+    {
+        COUNTRY,
+        KONTENGR2,
+        KONTENGR3,
+        WARENOGR,
+        WARENUGR,
+        TOUR,
+        KONTEN,
+        WAREN,
+        ZULETZT,
+        OFFEN,
+        DATEIEN,
+        EKBELEG,
+        VKBELEG,
+        EKWARE,
+        VKWARE,
+        ZAHLUNG,
+        EINAUSJJ,
+        BVJJ,
+        PARTIEJJ,
+        EKDATAJJ,
+        EKWAREJJ,
+        VKWAMMJJ,
+        VKBEMMJJ,
+        ZABMMJJ,
+        ZADMMJJ,
+        ZAHLENMMJJ,
+        VKTEXTE,
+        FIRMA,
+        PROGRAM,
+        STEUER,
+        POSITION
+    }
+}
