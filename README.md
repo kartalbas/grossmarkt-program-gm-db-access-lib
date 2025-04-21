@@ -53,8 +53,8 @@ src/
 
 ### Reading Data from a Table
 ```csharp
-// Initialize the database instance
-var gmDb = GmDb.Instance(@"D:\GM", "USERDATA");
+// Initialize the database instance using factory
+var gmDb = GmDbFactory.Create(@"D:\GM", "USERDATA");
 
 // Read data from the Waren (items) table
 var warenTable = gmDb.Read(TableTypes.WAREN, Files.Waren, string.Empty, null);

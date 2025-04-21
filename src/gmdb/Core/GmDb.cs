@@ -33,7 +33,6 @@
         private const FileShare FileShareOnWrite = FileShare.ReadWrite;
 
         private static Dictionary<string, List<int[]>> TableInfos { get; set; }
-        private static GmDb _objInstance;
         private static readonly object LOCK = new object();
         private const string SUFFIX_DAT = ".DAT";
         private const string SUFFIX_NDX = ".NDX";
@@ -80,23 +79,6 @@
         #endregion
 
         #region public genereal methods
-        public static GmDb Instance(string strGmPath, string strGmUserData)
-        {
-            lock (LOCK)
-            {
-                try
-                {
-                    if (_objInstance == null)
-                        _objInstance = new GmDb(strGmPath, strGmUserData);
-
-                    return _objInstance;
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
-            }
-        }
 
         public bool Accessable(string strFile, FileAccess enmFileAccess, FileShare enmFileShare)
         {
